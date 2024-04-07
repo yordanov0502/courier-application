@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+
+    <property name = "hibernate.dialect_class">org.hibernate.dialect.PostgreSQL10Dialect</property>
+    <property name="hibernate.connection.driver">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/swing-app</property>
+    <property name = "hibernate.connection.username">postgres</property>
+    <property name = "hibernate.connection.password">exit</property>
+    <property name = "hibernate.show_sql">true</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.enable_lazy_load_no_trans">true</property><!--[CAUTION/WARN] THIS MIGHT HAVE SIDE EFFECTS(N+1)-->
+    <property name="hibernate.id.new_generator_mappings">true</property>
+
+    <mapping class="bg.tu_varna.sit.data.models.entities.Admin"/>
+    <mapping class="bg.tu_varna.sit.data.models.entities.Courier"/>
+    <mapping class="bg.tu_varna.sit.data.models.entities.Customer"/>
+    <mapping class="bg.tu_varna.sit.data.models.entities.Office"/>
+    <mapping class="bg.tu_varna.sit.data.models.entities.Order"/>
+    <mapping class="bg.tu_varna.sit.data.models.entities.Status"/>
+
+  </session-factory>
+</hibernate-configuration>
