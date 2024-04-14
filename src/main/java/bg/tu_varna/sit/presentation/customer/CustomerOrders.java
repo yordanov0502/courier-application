@@ -26,6 +26,8 @@ public class CustomerOrders extends JFrame implements View {
     private JButton buttonLogout;
     private JComboBox comboBox1;
     private JLabel label1;
+    private JLabel label2;
+    private JTextField textFieldInfo;
 
     private final OrderService orderService = OrderService.getInstance();
     private final CourierService courierService = CourierService.getInstance();
@@ -46,6 +48,7 @@ public class CustomerOrders extends JFrame implements View {
         buttonGraphic.setPreferredSize(new Dimension(40,40));
         buttonOrders.setPreferredSize(new Dimension(40,40));
         buttonLogout.setPreferredSize(new Dimension(40,40));
+        textFieldInfo.setPreferredSize(new Dimension(40,40));
         setTitle("Клиент[Списък с поръчки]");
         setBounds(270, 100, 1000, 600);
         setVisible(true);
@@ -73,17 +76,19 @@ public class CustomerOrders extends JFrame implements View {
 
     private void addNewOrder(){
 
+        String orderInformation = textFieldInfo.getText();
+
         if(comboBox1.getSelectedItem()==null)
         {
             String [] parts = customer.getDeliveryAddress().split("/");
             String city = parts[0];
             String officeName = parts[1];
             Courier courier = courierService.getCourierByOfficeAddress(city,officeName);
-            Status newStatus = statusService.addNewStatus(new Status(null, StatusType.PENDING_COURIER,"-"));
+
+            Status newStatus = statusService.addNewStatus(new Status(null, StatusType.PENDING_COURIER,(orderInformation.isEmpty()) ? "-" : orderInformation));
             if(orderService.addNewOrder(new Order(null,null,this.customer,courier,newStatus)))
             {
                 JOptionPane.showMessageDialog(panel, "Успешно добавихте нова поръчка.", "Информация", JOptionPane.INFORMATION_MESSAGE);
-                comboBox1.setSelectedItem(null);
                 refreshTableData();
             }
             else {JOptionPane.showMessageDialog(panel, "Възникна грешка. Моля опитайте отново.", "Грешка", JOptionPane.ERROR_MESSAGE);}
@@ -94,11 +99,10 @@ public class CustomerOrders extends JFrame implements View {
             String [] parts = selectedItem.split("/");
             Integer courierId = Integer.parseInt(parts[0]);
             Courier courier = courierService.getCourierById(courierId);
-            Status newStatus = statusService.addNewStatus(new Status(null, StatusType.PENDING_COURIER,"-"));
+            Status newStatus = statusService.addNewStatus(new Status(null, StatusType.PENDING_COURIER,(orderInformation.isEmpty()) ? "-" : orderInformation));
             if(orderService.addNewOrder(new Order(null,null,this.customer,courier,newStatus)))
             {
                 JOptionPane.showMessageDialog(panel, "Успешно добавихте нова поръчка.", "Информация", JOptionPane.INFORMATION_MESSAGE);
-                comboBox1.setSelectedItem(null);
                 refreshTableData();
             }
             else {JOptionPane.showMessageDialog(panel, "Възникна грешка. Моля опитайте отново.", "Грешка", JOptionPane.ERROR_MESSAGE);}
@@ -136,6 +140,9 @@ public class CustomerOrders extends JFrame implements View {
     }
 
     private void refreshTableData() {
+        comboBox1.setSelectedItem(null);
+        textFieldInfo.setText("");
+
         String[] columnNames = {"Номер", "Клиент", "Куриер", "Статус", "Информация"};
         Object[][] data = getOrdersOfUser();
         DefaultTableModel model = new DefaultTableModel(data, columnNames) {
