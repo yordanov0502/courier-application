@@ -1,16 +1,16 @@
 package bg.tu_varna.sit.repository.implementations;
 
 import bg.tu_varna.sit.data.access.Connection;
-import bg.tu_varna.sit.data.models.entities.Courier;
-import bg.tu_varna.sit.data.models.entities.Customer;
-import bg.tu_varna.sit.data.models.entities.Office;
 import bg.tu_varna.sit.data.models.entities.Order;
 import bg.tu_varna.sit.repository.interfaces.OrderRepository;
+import org.apache.commons.lang3.time.DateUtils;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import javax.persistence.TemporalType;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class OrderRepositoryImpl implements OrderRepository<Order> {
@@ -106,7 +106,20 @@ public class OrderRepositoryImpl implements OrderRepository<Order> {
         Transaction transaction = session.beginTransaction();
         List<Order> orders = new ArrayList<>();
         try{
-            String jpql = "SELECT o FROM Order o WHERE customer.id= '" + customerId + "'";
+            String jpql = "SELECT o FROM Order o WHERE customer.id= '" + customerId + "'" +
+                    " ORDER BY (\n" +
+                    "    CASE o.status.statusType\n" +
+                    "    \n" +
+                    "    WHEN 'PENDING_COURIER'\n" +
+                    "    THEN 1\n" +
+                    "    \n" +
+                    "    WHEN 'IN_PROCESS'\n" +
+                    "    THEN 2\n" +
+                    "    \n" +
+                    "    WHEN 'DELIVERED'\n" +
+                    "    THEN 3\n" +
+                    "    END\n" +
+                    ") ASC";
             orders.addAll(session.createQuery(jpql, Order.class).getResultList());
             transaction.commit();
             log.info("Got all orders of customer with ID="+customerId+" successfully.");
@@ -124,7 +137,20 @@ public class OrderRepositoryImpl implements OrderRepository<Order> {
         Transaction transaction = session.beginTransaction();
         List<Order> orders = new ArrayList<>();
         try{
-            String jpql = "SELECT o FROM Order o";
+            String jpql = "SELECT o FROM Order o"+
+                    " ORDER BY (\n" +
+                    "    CASE o.status.statusType\n" +
+                    "    \n" +
+                    "    WHEN 'PENDING_COURIER'\n" +
+                    "    THEN 1\n" +
+                    "    \n" +
+                    "    WHEN 'IN_PROCESS'\n" +
+                    "    THEN 2\n" +
+                    "    \n" +
+                    "    WHEN 'DELIVERED'\n" +
+                    "    THEN 3\n" +
+                    "    END\n" +
+                    ") ASC";
             orders.addAll(session.createQuery(jpql, Order.class).getResultList());
             transaction.commit();
             log.info("Got all orders successfully.");
@@ -152,6 +178,43 @@ public class OrderRepositoryImpl implements OrderRepository<Order> {
             session.close();
         }
         return order;
+    }
+
+    @Override
+    public List<Order> getOrdersOfCustomerFromLast5Days(Integer customerId) {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<Order> orders = new ArrayList<>();
+        try {
+            Date fiveDaysAgo = DateUtils.addDays(new Date(), -5);
+            String jpql = "SELECT o FROM Order o WHERE o.customer.id = :customerId AND o.createdAt >= :fiveDaysAgo"+
+                    " ORDER BY (\n" +
+                    "    CASE o.status.statusType\n" +
+                    "    \n" +
+                    "    WHEN 'PENDING_COURIER'\n" +
+                    "    THEN 1\n" +
+                    "    \n" +
+                    "    WHEN 'IN_PROCESS'\n" +
+                    "    THEN 2\n" +
+                    "    \n" +
+                    "    WHEN 'DELIVERED'\n" +
+                    "    THEN 3\n" +
+                    "    END\n" +
+                    ") ASC";
+
+            orders.addAll(session.createQuery(jpql, Order.class)
+                    .setParameter("customerId", customerId)
+                    .setParameter("fiveDaysAgo", fiveDaysAgo, TemporalType.DATE)
+                    .getResultList());
+            transaction.commit();
+            log.info("Got orders of the customer from the last 5 days successfully.");
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            log.error("Error getting orders of the customer from the last 5 days: " + e.getMessage());
+        } finally {
+            session.close();
+        }
+        return orders;
     }
 
 }

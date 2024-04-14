@@ -30,4 +30,6 @@ public class OrderService {
     public List<Order> getAllOrders() {return orderRepository.getAllOrders();}
 
     public Order getOrderById(Integer orderId) {return orderRepository.getOrderById(orderId);}
+
+    public List<Order> getOrdersOfCustomerFromLast5Days(Integer customerId){return orderRepository.getOrdersOfCustomerFromLast5Days(customerId);}
 }

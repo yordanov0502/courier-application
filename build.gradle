@@ -18,6 +18,8 @@ dependencies {
     implementation 'org.postgresql:postgresql:42.6.0'
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
     implementation 'org.hibernate:hibernate-core:5.4.11.Final'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
 
 
     testImplementation platform('org.junit:junit-bom:5.9.1')

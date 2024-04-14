@@ -62,7 +62,7 @@ public class CustomerOrders extends JFrame implements View {
         buttonAddOrder.setPreferredSize(new Dimension(50,50));
         buttonAddOrder.addActionListener(action -> addNewOrder());
 
-        //buttonQueries.addMouseListener(new Navigator(this, new CustomerQueries(customer)));
+        buttonQueries.addMouseListener(new Navigator(this, new CustomerQueries(customer)));
         //buttonGraphic.addMouseListener(new Navigator(this, new CustomerGraphic(customer)));
 
         buttonLogout.addMouseListener(new Navigator(this, new LoginView(Role.CUSTOMER)));
