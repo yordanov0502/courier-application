@@ -78,9 +78,9 @@ public class AdminCustomers extends JFrame implements View {
 
         buttonCouriers.addMouseListener(new Navigator(this, new AdminCouriers()));
 
-        List<Office> officeList = officeService.getAllOffices();
-        for (Office office : officeList) {
-            comboBox1.addItem(office.getCity() + "/" + office.getOfficeName());
+        List<String> citiesList = officeService.getAllDistinctCities();
+        for (String city : citiesList) {
+            comboBox1.addItem(city);
         }
         comboBox1.setSelectedItem(null);
     }
@@ -93,14 +93,9 @@ public class AdminCustomers extends JFrame implements View {
         }
         else
         {
-            String selectedItem = (String) comboBox1.getSelectedItem();
-            String [] parts = selectedItem.split("/");
-            String city = parts[0];
-            String name = parts[1];
-            Office office = officeService.getOfficeByCityAndName(city,name);
-            String deliveryAddress = office.getCity() + "/" + office.getOfficeName();
+            String selectedCity = (String) comboBox1.getSelectedItem();
 
-            if(customerService.addNewCustomer(new Customer(null,textField1.getText(),textField2.getText(), Hasher.SHA512.hash(new String(passwordField1.getPassword())),textField3.getText(), deliveryAddress)))
+            if(customerService.addNewCustomer(new Customer(null,textField1.getText(),textField2.getText(), Hasher.SHA512.hash(new String(passwordField1.getPassword())),textField3.getText(), selectedCity)))
             {
                 JOptionPane.showMessageDialog(panel, "Успешно добавихте нов клиент.", "Информация", JOptionPane.INFORMATION_MESSAGE);
                 textField1.setText("");
@@ -145,22 +140,17 @@ public class AdminCustomers extends JFrame implements View {
             String username = (String) model.getValueAt(selectedRow, 2);
             String password = (String) model.getValueAt(selectedRow, 3);
             String phoneNumber = (String) model.getValueAt(selectedRow, 4);
-            String deliveryAddress = (String) model.getValueAt(selectedRow, 5);
+            String cityAddress = (String) model.getValueAt(selectedRow, 5);
 
-            if(name.isEmpty() || username.isEmpty() || phoneNumber.isEmpty() || deliveryAddress.isEmpty())
+            if(name.isEmpty() || username.isEmpty() || phoneNumber.isEmpty() || cityAddress.isEmpty())
             {
                 JOptionPane.showMessageDialog(panel, "Моля въведете данни във всички полета", "Грешка", JOptionPane.ERROR_MESSAGE);
             }
             else
             {
-                String [] parts = deliveryAddress.split("/");
-                if (parts.length > 1) {
-                    String city = parts[0];
-                    String officeName = parts[1];
-
-                    if(officeService.getOfficeByCityAndName(city, officeName) != null)
+                    if(officeService.cityHasOffice(cityAddress))
                     {
-                        Customer updatedCustomer = new Customer(id, name, username, password, phoneNumber, deliveryAddress);
+                        Customer updatedCustomer = new Customer(id, name, username, password, phoneNumber, cityAddress);
 
                         if(customerService.updateCustomer(updatedCustomer))
                         {
@@ -169,12 +159,13 @@ public class AdminCustomers extends JFrame implements View {
                         }
                         else { JOptionPane.showMessageDialog(panel, "Възникна грешка. Моля опитайте отново.", "Грешка", JOptionPane.ERROR_MESSAGE);}
                     }
-                    else {JOptionPane.showMessageDialog(panel, "Офис: '"+city+"/"+officeName+"' не съществува. ", "Грешка", JOptionPane.ERROR_MESSAGE);}
-                }
-                else
-                {
-                    JOptionPane.showMessageDialog(panel, "Неправилен формат на данни за офис [Град/Име на офис]", "Грешка", JOptionPane.ERROR_MESSAGE);
-                }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(panel, "Град: '"+cityAddress+"' няма офиси.", "Грешка", JOptionPane.ERROR_MESSAGE);
+                        refreshTableData();
+                    }
+
+
             }
         }
         else {JOptionPane.showMessageDialog(panel, "Моля изберете клиент", "Грешка", JOptionPane.ERROR_MESSAGE);}

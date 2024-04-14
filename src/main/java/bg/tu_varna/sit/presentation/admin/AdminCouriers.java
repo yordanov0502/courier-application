@@ -223,7 +223,11 @@ public class AdminCouriers extends JFrame implements View {
                                 }
                                 else { JOptionPane.showMessageDialog(panel, "Възникна грешка. Моля опитайте отново.", "Грешка", JOptionPane.ERROR_MESSAGE);}
                             }
-                            else {JOptionPane.showMessageDialog(panel, "Офис: '"+city+"/"+officeName+"' не съществува. ", "Грешка", JOptionPane.ERROR_MESSAGE);}
+                            else
+                            {
+                                JOptionPane.showMessageDialog(panel, "Офис: '"+city+"/"+officeName+"' не съществува. ", "Грешка", JOptionPane.ERROR_MESSAGE);
+                                refreshTableData();
+                            }
 
                         }
                         else

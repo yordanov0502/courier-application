@@ -180,5 +180,23 @@ public class CourierRepositoryImpl implements CourierRepository<Courier> {
         return null;
     }
 
+    @Override
+    public List<Courier> getAllCouriersByCity(String city) {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<Courier> couriers = new ArrayList<>();
+        try{
+            String jpql = "SELECT c FROM Courier c WHERE c.office.city = '"+city+"'";
+            couriers.addAll(session.createQuery(jpql, Courier.class).getResultList());
+            transaction.commit();
+            log.info("Got all couriers by city successfully.");
+        } catch (Exception e) {
+            log.error("Get all couriers by city error: " + e.getMessage());
+        } finally {
+            session.close();
+        }
+        return couriers;
+    }
+
 
 }

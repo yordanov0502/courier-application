@@ -67,7 +67,7 @@ public class CustomerOrders extends JFrame implements View {
 
         buttonLogout.addMouseListener(new Navigator(this, new LoginView(Role.CUSTOMER)));
 
-        java.util.List<Courier> courierList = courierService.getAllCouriers();
+        List<Courier> courierList = courierService.getAllCouriersByCity(customer.getDeliveryAddress());
         for (Courier courier : courierList) {
             comboBox1.addItem(courier.getId() + "/" + courier.getName() + "/" + courier.getOffice().getCity()+"/"+courier.getOffice().getOfficeName());
         }
@@ -78,22 +78,7 @@ public class CustomerOrders extends JFrame implements View {
 
         String orderInformation = textFieldInfo.getText();
 
-        if(comboBox1.getSelectedItem()==null)
-        {
-            String [] parts = customer.getDeliveryAddress().split("/");
-            String city = parts[0];
-            String officeName = parts[1];
-            Courier courier = courierService.getCourierByOfficeAddress(city,officeName);
-
-            Status newStatus = statusService.addNewStatus(new Status(null, StatusType.PENDING_COURIER,(orderInformation.isEmpty()) ? "-" : orderInformation));
-            if(orderService.addNewOrder(new Order(null,null,this.customer,courier,newStatus)))
-            {
-                JOptionPane.showMessageDialog(panel, "Успешно добавихте нова поръчка.", "Информация", JOptionPane.INFORMATION_MESSAGE);
-                refreshTableData();
-            }
-            else {JOptionPane.showMessageDialog(panel, "Възникна грешка. Моля опитайте отново.", "Грешка", JOptionPane.ERROR_MESSAGE);}
-        }
-        else
+        if(comboBox1.getSelectedItem()!=null)
         {
             String selectedItem = (String) comboBox1.getSelectedItem();
             String [] parts = selectedItem.split("/");
@@ -106,6 +91,10 @@ public class CustomerOrders extends JFrame implements View {
                 refreshTableData();
             }
             else {JOptionPane.showMessageDialog(panel, "Възникна грешка. Моля опитайте отново.", "Грешка", JOptionPane.ERROR_MESSAGE);}
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(panel, "Моля заявете куриер за вашата поръчка", "Грешка", JOptionPane.ERROR_MESSAGE);
         }
     }
 

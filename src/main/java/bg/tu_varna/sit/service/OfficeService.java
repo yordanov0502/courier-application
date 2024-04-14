@@ -26,4 +26,8 @@ public class OfficeService {
 
     public List<Office> getAllOffices(){return officeRepository.getAll();}
 
+    public List<String> getAllDistinctCities(){return officeRepository.getAllDistinctCities();}
+
+    public boolean cityHasOffice(String city) {return officeRepository.cityHasOffice(city);}
+
 }

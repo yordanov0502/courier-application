@@ -109,4 +109,45 @@ public class OfficeRepositoryImpl implements OfficeRepository<Office> {
         return offices;
     }
 
+    @Override
+    public List<String> getAllDistinctCities() {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<String> offices = new ArrayList<>();
+        try{
+            String jpql = "SELECT DISTINCT(o.city) FROM Office o";
+            offices.addAll(session.createQuery(jpql, String.class).getResultList());
+            transaction.commit();
+            log.info("Got all distinct offices successfully.");
+        } catch (Exception e) {
+            log.error("Get all distinct offices error: " + e.getMessage());
+        } finally {
+            session.close();
+        }
+        System.out.println(offices);
+        return offices;
+    }
+
+    @Override
+    public boolean cityHasOffice(String city) {
+        Session session = Connection.openSession();
+
+        try
+        {
+            String jpql = "SELECT COUNT(o) FROM Office o WHERE o.city = :city";
+            Long count = (Long) session.createQuery(jpql)
+                    .setParameter("city", city)
+                    .getSingleResult();
+            log.info("Checked for office by city successfully.");
+            return count > 0;
+        }
+        catch(Exception e)
+        {
+            log.error("Check for office by city error: " + e.getMessage());
+            return false;
+        } finally {
+            session.close();
+        }
+    }
+
 }

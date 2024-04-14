@@ -7,4 +7,6 @@ import java.util.List;
 public interface OfficeRepository<T> extends Repository<T> {
     Office getByCityAndName(String office, String name);
     List<Office> getAll();
+    List<String> getAllDistinctCities();
+    boolean cityHasOffice(String city);
 }

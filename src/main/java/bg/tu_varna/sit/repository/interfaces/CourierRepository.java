@@ -10,4 +10,5 @@ public interface CourierRepository<T> extends Repository<T> {
     boolean deleteById(Integer courierId);
     Courier getByOfficeAddress(String city,String officeName);
     Courier getById(Integer courierId);
+    List<Courier> getAllCouriersByCity(String city);
 }

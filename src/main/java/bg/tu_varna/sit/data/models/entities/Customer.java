@@ -1,6 +1,5 @@
 package bg.tu_varna.sit.data.models.entities;
 
-import bg.tu_varna.sit.data.models.enums.user.Role;
 import lombok.*;
 
 import javax.persistence.*;

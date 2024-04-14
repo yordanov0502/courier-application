@@ -36,4 +36,6 @@ public class CourierService {
     public Courier getCourierByOfficeAddress(String city,String officeName){return courierRepository.getByOfficeAddress(city,officeName);}
 
     public Courier getCourierById(Integer courierId) {return courierRepository.getById(courierId);}
+
+    public List<Courier> getAllCouriersByCity(String city) {return courierRepository.getAllCouriersByCity(city);}
 }
