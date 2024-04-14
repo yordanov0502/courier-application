@@ -1,12 +1,12 @@
 package bg.tu_varna.sit.service;
 
+import bg.tu_varna.sit.data.models.entities.Courier;
 import bg.tu_varna.sit.data.models.entities.Status;
 import bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl;
 import org.apache.log4j.Logger;
 
 public class StatusService {
     private static final Logger log = Logger.getLogger(StatusService.class);
-    private final StatusService statusService = StatusService.getInstance();
     private final StatusRepositoryImpl statusRepository = StatusRepositoryImpl.getInstance();
 
     //lazy-loaded singleton pattern
@@ -23,5 +23,7 @@ public class StatusService {
 
     //? Used by customers when adding/creating new order
     public Status addNewStatus(Status status){return statusRepository.addStatus(status);}
+
+    public boolean updateStatus(Status status){return statusRepository.update(status);}
 
 }

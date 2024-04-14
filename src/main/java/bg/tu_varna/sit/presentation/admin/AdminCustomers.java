@@ -77,12 +77,15 @@ public class AdminCustomers extends JFrame implements View {
         buttonDelete.addActionListener(action -> deleteCustomer());
 
         buttonCouriers.addMouseListener(new Navigator(this, new AdminCouriers()));
+        buttonOrders.addMouseListener(new Navigator(this,new AdminOrders()));
 
         List<String> citiesList = officeService.getAllDistinctCities();
         for (String city : citiesList) {
             comboBox1.addItem(city);
         }
         comboBox1.setSelectedItem(null);
+
+        tableCustomers.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     }
 
     private void addNewCustomer(){
@@ -175,7 +178,6 @@ public class AdminCustomers extends JFrame implements View {
         int selectedRow = tableCustomers.getSelectedRow();
         if (selectedRow >= 0) {
             DefaultTableModel model = (DefaultTableModel) tableCustomers.getModel();
-            System.out.println("Selected row data:");
             Integer customerId = (Integer) model.getValueAt(selectedRow, 0);
             if(customerService.deleteCustomerById(customerId))
             {

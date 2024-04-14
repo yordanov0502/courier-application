@@ -4,12 +4,10 @@ import bg.tu_varna.sit.data.models.entities.Courier;
 import bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl;
 import org.apache.log4j.Logger;
 
-import javax.swing.plaf.PanelUI;
 import java.util.List;
 
 public class CourierService {
     private static final Logger log = Logger.getLogger(CourierService.class);
-    private final CourierService courierService = CourierService.getInstance();
     private final CourierRepositoryImpl courierRepository = CourierRepositoryImpl.getInstance();
 
     //lazy-loaded singleton pattern

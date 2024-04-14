@@ -368,3 +368,838 @@
 [AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
 [AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
 [AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=38 successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4a8a0099] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=38 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@d5bb1c4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5c7dfc05] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3178219a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@45b15381] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=38 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@d5bb1c4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] ERROR bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Get customer by username & password error: No entity found for query
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=38 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@39ffda4a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4a8a0099] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@939ff41] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e36b7a0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4a8a0099] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e36b7a0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2dbfcf7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2dbfcf7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@39ffda4a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 30 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 29 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 28 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 27 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Checked for office by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Customer updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Checked for office by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] ERROR bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Get office by city and name error: No entity found for query
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4a8a0099] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4a8a0099] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e36b7a0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=39 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 32 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 31 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=39 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e36b7a0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got office by city and name successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Courier updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got office by city and name successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Courier updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Checked for office by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Customer updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Checked for office by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Customer updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Checked for office by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4a8a0099] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=38 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=38 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4a8a0099] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2dbfcf7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2dbfcf7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 34 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3178219a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@497b560e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2dbfcf7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2dbfcf7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got order by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 35 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got order by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 33 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got order by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@39ffda4a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got order by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got order by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 37 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.4.11.Final}
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/swing-app]
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, driver=org.postgresql.Driver, user=postgres}
+[main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+[main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@d257579] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] INFO  bg.tu_varna.sit.data.access.Connection  - Initial SessionFactory created successfully
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got order by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=40 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=39 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got order by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=39 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders of customer with ID=40 successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers by city successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order added successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got order by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got order by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.StatusRepositoryImpl  - Status updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order updated successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got customer by id successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Order with ID 36 deleted successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl  - Got all orders successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl  - Got all couriers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all offices successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl  - Got all customers successfully.
+[AWT-EventQueue-0] INFO  bg.tu_varna.sit.repository.implementations.OfficeRepositoryImpl  - Got all distinct offices successfully.

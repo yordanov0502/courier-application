@@ -137,4 +137,22 @@ public class CustomerRepositoryImpl implements CustomerRepository<Customer> {
             session.close();
         }
     }
+
+    @Override
+    public Customer getCustomerById(Integer customerId) {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        Customer customer = null;
+        try{
+            String jpql = "SELECT c FROM Customer c WHERE c.id = '"+customerId+"'";
+            customer = session.createQuery(jpql, Customer.class).getSingleResult();
+            transaction.commit();
+            log.info("Got customer by id successfully.");
+        } catch (Exception e) {
+            log.error("Get customer by id error: " + e.getMessage());
+        } finally {
+            session.close();
+        }
+        return customer;
+    }
 }

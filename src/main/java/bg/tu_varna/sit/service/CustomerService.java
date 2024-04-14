@@ -1,8 +1,6 @@
 package bg.tu_varna.sit.service;
 
-import bg.tu_varna.sit.data.models.entities.Courier;
 import bg.tu_varna.sit.data.models.entities.Customer;
-import bg.tu_varna.sit.repository.implementations.CourierRepositoryImpl;
 import bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl;
 import org.apache.log4j.Logger;
 
@@ -10,7 +8,6 @@ import java.util.List;
 
 public class CustomerService {
     private static final Logger log = Logger.getLogger(CustomerService.class);
-    private final CustomerService customerService = CustomerService.getInstance();
     private final CustomerRepositoryImpl customerRepository = CustomerRepositoryImpl.getInstance();
 
     //lazy-loaded singleton pattern
@@ -34,4 +31,5 @@ public class CustomerService {
 
     public List<Customer> getAllCustomers(){return customerRepository.getAllCustomers();}
 
+    public Customer getCustomerById(Integer customerId) {return customerRepository.getCustomerById(customerId);}
 }

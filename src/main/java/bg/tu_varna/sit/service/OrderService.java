@@ -1,8 +1,6 @@
 package bg.tu_varna.sit.service;
 
-import bg.tu_varna.sit.data.models.entities.Customer;
 import bg.tu_varna.sit.data.models.entities.Order;
-import bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl;
 import bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl;
 import org.apache.log4j.Logger;
 
@@ -10,7 +8,6 @@ import java.util.List;
 
 public class OrderService {
     private static final Logger log = Logger.getLogger(OrderService.class);
-    private final OrderService orderService = OrderService.getInstance();
     private final OrderRepositoryImpl orderRepository = OrderRepositoryImpl.getInstance();
 
     //lazy-loaded singleton pattern
@@ -29,4 +26,8 @@ public class OrderService {
     public boolean updateOrder(Order order){return orderRepository.update(order);}
 
     public List<Order> getOrdersOfCustomer(Integer customerId){return orderRepository.getOrdersOfCustomer(customerId);}
+
+    public List<Order> getAllOrders() {return orderRepository.getAllOrders();}
+
+    public Order getOrderById(Integer orderId) {return orderRepository.getOrderById(orderId);}
 }

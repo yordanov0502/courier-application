@@ -80,12 +80,15 @@ public class AdminCouriers extends JFrame implements View {
         buttonDelete.addActionListener(action -> deleteCourier());
 
         buttonCustomers.addMouseListener(new Navigator(this, new AdminCustomers()));
+        buttonOrders.addMouseListener(new Navigator(this,new AdminOrders()));
 
         List<Office> officeList = officeService.getAllOffices();
         for (Office office : officeList) {
             comboBox1.addItem(office.getCity() + "/" + office.getOfficeName());
         }
         comboBox1.setSelectedItem(null);
+
+        tableCouriers.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     }
 
     private void addNewCourier(){
@@ -245,7 +248,6 @@ public class AdminCouriers extends JFrame implements View {
         int selectedRow = tableCouriers.getSelectedRow();
         if (selectedRow >= 0) {
             DefaultTableModel model = (DefaultTableModel) tableCouriers.getModel();
-            System.out.println("Selected row data:");
             Integer courierId = (Integer) model.getValueAt(selectedRow, 0);
             if(courierService.deleteCourierById(courierId))
             {

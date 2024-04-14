@@ -10,7 +10,6 @@ import java.util.List;
 
 public class OfficeService {
     private static final Logger log = Logger.getLogger(OfficeService.class);
-    private final OfficeService officeService = OfficeService.getInstance();
     private final OfficeRepositoryImpl officeRepository = OfficeRepositoryImpl.getInstance();
 
     //lazy-loaded singleton pattern

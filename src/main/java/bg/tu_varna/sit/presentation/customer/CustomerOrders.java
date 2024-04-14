@@ -72,6 +72,8 @@ public class CustomerOrders extends JFrame implements View {
             comboBox1.addItem(courier.getId() + "/" + courier.getName() + "/" + courier.getOffice().getCity()+"/"+courier.getOffice().getOfficeName());
         }
         comboBox1.setSelectedItem(null);
+
+        tableOrders.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     }
 
     private void addNewOrder(){
@@ -108,7 +110,8 @@ public class CustomerOrders extends JFrame implements View {
             data[i][1] = order.getCustomer().getId()+"/"+order.getCustomer().getName();
             data[i][2] = order.getCourier().getId()+"/"+order.getCourier().getName();
             data[i][3] = getStatus(order.getStatus());
-            data[i][4] = order.getStatus().getAdditionalInformation();
+            data[i][4] = order.getCourier().getOffice().getCity() + "/" + order.getCourier().getOffice().getOfficeName();
+            data[i][5] = order.getStatus().getAdditionalInformation();
         }
 
         return data;
@@ -132,12 +135,12 @@ public class CustomerOrders extends JFrame implements View {
         comboBox1.setSelectedItem(null);
         textFieldInfo.setText("");
 
-        String[] columnNames = {"Номер", "Клиент", "Куриер", "Статус", "Информация"};
+        String[] columnNames = {"Номер", "Клиент", "Куриер", "Статус", "Адрес", "Информация"};
         Object[][] data = getOrdersOfUser();
         DefaultTableModel model = new DefaultTableModel(data, columnNames) {
             @Override
             public boolean isCellEditable(int row, int column) {
-                return column != 0 && column != 1 && column != 2 && column != 3 && column != 4;
+                return column != 0 && column != 1 && column != 2 && column != 3 && column != 4 && column != 5;
             }
         };
         tableOrders.setModel(model);

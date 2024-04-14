@@ -2,6 +2,7 @@ package bg.tu_varna.sit.repository.implementations;
 
 import bg.tu_varna.sit.data.access.Connection;
 import bg.tu_varna.sit.data.models.entities.Courier;
+import bg.tu_varna.sit.data.models.entities.Customer;
 import bg.tu_varna.sit.data.models.entities.Office;
 import bg.tu_varna.sit.data.models.entities.Order;
 import bg.tu_varna.sit.repository.interfaces.OrderRepository;
@@ -117,5 +118,40 @@ public class OrderRepositoryImpl implements OrderRepository<Order> {
         return orders;
     }
 
+    @Override
+    public List<Order> getAllOrders() {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<Order> orders = new ArrayList<>();
+        try{
+            String jpql = "SELECT o FROM Order o";
+            orders.addAll(session.createQuery(jpql, Order.class).getResultList());
+            transaction.commit();
+            log.info("Got all orders successfully.");
+        } catch (Exception e) {
+            log.error("Get all orders error: " + e.getMessage());
+        } finally {
+            session.close();
+        }
+        return orders;
+    }
+
+    @Override
+    public Order getOrderById(Integer orderId) {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        Order order = null;
+        try{
+            String jpql = "SELECT o FROM Order o WHERE o.id = '"+orderId+"'";
+            order = session.createQuery(jpql, Order.class).getSingleResult();
+            transaction.commit();
+            log.info("Got order by id successfully.");
+        } catch (Exception e) {
+            log.error("Get order by id error: " + e.getMessage());
+        } finally {
+            session.close();
+        }
+        return order;
+    }
 
 }

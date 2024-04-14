@@ -6,7 +6,6 @@ import org.apache.log4j.Logger;
 
 public class AdminService {
     private static final Logger log = Logger.getLogger(AdminService.class);
-    private final AdminService adminService = AdminService.getInstance();
     private final AdminRepositoryImpl adminRepository = AdminRepositoryImpl.getInstance();
 
     //lazy-loaded singleton pattern
