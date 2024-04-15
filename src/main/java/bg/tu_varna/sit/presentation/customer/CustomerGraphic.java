@@ -59,8 +59,10 @@ public class CustomerGraphic extends JFrame implements View {
 
         String[] monthNames = {"Януари", "Февруари", "Март", "Април", "Май", "Юни",
                 "Юли", "Август", "Септември", "Октомври", "Ноември", "Декември"};
-        for (int i = 0; i < ordersOfCustomerForEachMonth.length; i++) {
-            if (ordersOfCustomerForEachMonth[i] > 0) {
+        for (int i = 0; i < ordersOfCustomerForEachMonth.length; i++)
+        {
+            if (ordersOfCustomerForEachMonth[i] > 0)
+            {
                 dataset.setValue(monthNames[i] + " [" + ordersOfCustomerForEachMonth[i] + "]", ordersOfCustomerForEachMonth[i]);
             }
         }

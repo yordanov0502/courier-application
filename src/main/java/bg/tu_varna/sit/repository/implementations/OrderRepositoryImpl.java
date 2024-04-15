@@ -2,6 +2,7 @@ package bg.tu_varna.sit.repository.implementations;
 
 import bg.tu_varna.sit.data.access.Connection;
 import bg.tu_varna.sit.data.models.entities.Order;
+import bg.tu_varna.sit.data.models.enums.status.StatusType;
 import bg.tu_varna.sit.repository.interfaces.OrderRepository;
 import org.apache.commons.lang3.time.DateUtils;
 import org.apache.log4j.Logger;
@@ -279,8 +280,9 @@ public class OrderRepositoryImpl implements OrderRepository<Order> {
 
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
-        int[] monthlyOrders = new int[12]; // Array to store the count of orders for each month
-        try {
+        int[] monthlyOrders = new int[12];
+        try
+        {
             String jpql = "SELECT MONTH(o.createdAt), COUNT(o) FROM Order o " +
                     "WHERE o.customer.id = :customerId AND YEAR(o.createdAt) = :currentYear " +
                     "GROUP BY MONTH(o.createdAt) ORDER BY MONTH(o.createdAt)";
@@ -288,20 +290,64 @@ public class OrderRepositoryImpl implements OrderRepository<Order> {
                     .setParameter("customerId", customerId)
                     .setParameter("currentYear", currentYear)
                     .getResultList();
-            for (Object[] result : results) {
+            for (Object[] result : results)
+            {
                 int month = (Integer) result[0];
                 long count = (Long) result[1];
                 monthlyOrders[month - 1] = (int) count;
             }
             transaction.commit();
             log.info("Got monthly order counts for customer with ID=" + customerId + " successfully.");
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             log.error("Error getting monthly order counts for customer with ID=" + customerId + ": " + e.getMessage());
             transaction.rollback();
-        } finally {
+        }
+        finally
+        {
             session.close();
         }
         return monthlyOrders;
+    }
+
+    @Override
+    public int[] getOrdersOfCourierWithDifferentStatuses(Integer courierId) {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        int[] statusCounts = new int[3];
+        try
+        {
+            String jpql = "SELECT o.status.statusType, COUNT(o) FROM Order o " +
+                    "WHERE o.courier.id = :courierId " +
+                    "GROUP BY o.status.statusType";
+            List<Object[]> results = session.createQuery(jpql, Object[].class)
+                    .setParameter("courierId", courierId)
+                    .getResultList();
+            for (Object[] result : results)
+            {
+                StatusType statusType = (StatusType) result[0];
+                long count = (Long) result[1];
+                switch (statusType)
+                {
+                    case PENDING_COURIER -> statusCounts[0] = (int) count;
+                    case IN_PROCESS -> statusCounts[1] = (int) count;
+                    case DELIVERED -> statusCounts[2] = (int) count;
+                }
+            }
+            transaction.commit();
+            log.info("Got order counts by status for courier with ID=" + courierId + " successfully.");
+        }
+        catch (Exception e)
+        {
+            log.error("Error getting order counts by status for courier with ID=" + courierId + ": " + e.getMessage());
+            transaction.rollback();
+        }
+        finally
+        {
+            session.close();
+        }
+        return statusCounts;
     }
 
 }

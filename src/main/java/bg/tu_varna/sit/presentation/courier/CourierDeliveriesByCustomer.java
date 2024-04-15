@@ -62,7 +62,7 @@ public class CourierDeliveriesByCustomer extends JFrame implements View {
         buttonOrdersByCustomer.setPreferredSize(new Dimension(40,40));
         buttonGraphic.setPreferredSize(new Dimension(40,40));
         buttonLogout.setPreferredSize(new Dimension(40,40));
-        setTitle("Куриер[Списък с поръчки по конкретен клиент");
+        setTitle("Куриер[Списък с поръчки по конкретен клиент]");
         setBounds(270, 100, 1000, 600);
         setVisible(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -79,7 +79,7 @@ public class CourierDeliveriesByCustomer extends JFrame implements View {
         buttonClear.addActionListener(action -> clear());
 
         buttonOrdersPendingCourier.addMouseListener(new Navigator(this, new CourierDeliveries(courier)));
-        //!buttonGraphic.addMouseListener(new Navigator(this,new AdminCustomers()));
+        buttonGraphic.addMouseListener(new Navigator(this,new CourierGraphic(courier)));
 
         List<Customer> customerList = customerService.getAllCustomersWithOrdersByCourier(courier);
         for (Customer customer : customerList) {comboBox2.addItem(customer.getId()+"/"+customer.getName()+"/"+customer.getDeliveryAddress());}

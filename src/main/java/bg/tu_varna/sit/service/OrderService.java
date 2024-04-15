@@ -38,4 +38,6 @@ public class OrderService {
     public List<Order> getOrdersOfCustomerAfterDate(Integer customerId, Date date){return orderRepository.getOrdersOfCustomerAfterDate(customerId,date);}
 
     public int[] getMonthlyOrdersOfCustomer(Integer customerId){return orderRepository.getMonthlyOrdersOfCustomer(customerId);}
+
+    public int[] getOrdersOfCourierWithDifferentStatuses(Integer courierId){return orderRepository.getOrdersOfCourierWithDifferentStatuses(courierId);}
 }

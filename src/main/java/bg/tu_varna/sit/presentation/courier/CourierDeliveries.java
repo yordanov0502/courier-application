@@ -58,7 +58,7 @@ public class CourierDeliveries extends JFrame implements View {
         buttonOrdersByCustomer.setPreferredSize(new Dimension(40,40));
         buttonGraphic.setPreferredSize(new Dimension(40,40));
         buttonLogout.setPreferredSize(new Dimension(40,40));
-        setTitle("Куриер[Списък с поръчки със статус \"Чака куриер\"");
+        setTitle("Куриер[Списък с поръчки със статус \"Чака куриер\"]");
         setBounds(270, 100, 1000, 600);
         setVisible(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -76,7 +76,7 @@ public class CourierDeliveries extends JFrame implements View {
         buttonClear.addActionListener(action -> clear());
 
         buttonOrdersByCustomer.addMouseListener(new Navigator(this, new CourierDeliveriesByCustomer(courier)));
-        //!buttonGraphic.addMouseListener(new Navigator(this,new AdminCustomers()));
+        buttonGraphic.addMouseListener(new Navigator(this,new CourierGraphic(courier)));
 
         comboBox1.addItem("Чака куриер");
         comboBox1.addItem("В процес на доставка");
