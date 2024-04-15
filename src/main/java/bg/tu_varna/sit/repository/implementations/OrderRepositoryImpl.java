@@ -235,4 +235,38 @@ public class OrderRepositoryImpl implements OrderRepository<Order> {
         return orders;
     }
 
+    @Override
+    public List<Order> getOrdersOfCustomerAfterDate(Integer customerId, Date date) {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<Order> orders = new ArrayList<>();
+        try {
+            String jpql = "SELECT o FROM Order o WHERE o.customer.id = :customerId AND o.createdAt >= :date " +
+                    "ORDER BY (\n" +
+                    "    CASE o.status.statusType\n" +
+                    "    WHEN 'PENDING_COURIER'\n" +
+                    "    THEN 1\n" +
+                    "    WHEN 'IN_PROCESS'\n" +
+                    "    THEN 2\n" +
+                    "    WHEN 'DELIVERED'\n" +
+                    "    THEN 3\n" +
+                    "    END\n" +
+                    ") ASC";
+
+            orders.addAll(session.createQuery(jpql, Order.class)
+                    .setParameter("customerId", customerId)
+                    .setParameter("date", date, TemporalType.DATE)
+                    .getResultList());
+            transaction.commit();
+            log.info("Got orders of the customer from the specified date successfully.");
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            log.error("Error getting orders of the customer from the specified date: " + e.getMessage());
+        } finally {
+            session.close();
+        }
+        return orders;
+    }
+
+
 }

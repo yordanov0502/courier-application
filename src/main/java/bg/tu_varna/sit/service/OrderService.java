@@ -4,6 +4,7 @@ import bg.tu_varna.sit.data.models.entities.Order;
 import bg.tu_varna.sit.repository.implementations.OrderRepositoryImpl;
 import org.apache.log4j.Logger;
 
+import java.util.Date;
 import java.util.List;
 
 public class OrderService {
@@ -33,4 +34,6 @@ public class OrderService {
 
     public List<Order> getOrdersOfCustomerFromLast5Days(Integer customerId){return orderRepository.getOrdersOfCustomerFromLast5Days(customerId);}
     public List<Order> getAllPendingOrdersOfCourier(Integer courierId){return orderRepository.getAllPendingOrdersOfCourier(courierId);}
+
+    public List<Order> getOrdersOfCustomerAfterDate(Integer customerId, Date date){return orderRepository.getOrdersOfCustomerAfterDate(customerId,date);}
 }
