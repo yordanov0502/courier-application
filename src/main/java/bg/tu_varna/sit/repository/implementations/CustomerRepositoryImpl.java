@@ -155,4 +155,25 @@ public class CustomerRepositoryImpl implements CustomerRepository<Customer> {
         }
         return customer;
     }
+
+    @Override
+    public List<Customer> getAllCustomersWithOrdersByCourier(Courier courier) {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<Customer> customers = new ArrayList<>();
+        try {
+            String jpql = "SELECT DISTINCT o.customer FROM Order o WHERE o.courier.id = :courierId AND o.customer IS NOT NULL";
+            customers.addAll(session.createQuery(jpql, Customer.class)
+                    .setParameter("courierId", courier.getId())
+                    .getResultList());
+            transaction.commit();
+            log.info("Successfully retrieved all distinct customers with orders handled by courier with ID=" + courier.getId());
+        } catch (Exception e) {
+            log.error("Error retrieving customers for courier with ID=" + courier.getId() + ": " + e.getMessage());
+            if (transaction != null) transaction.rollback();
+        } finally {
+            session.close();
+        }
+        return customers;
+    }
 }

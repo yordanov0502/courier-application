@@ -9,8 +9,7 @@ import bg.tu_varna.sit.data.models.entities.Status;
 import bg.tu_varna.sit.data.models.enums.status.StatusType;
 import bg.tu_varna.sit.data.models.enums.user.Role;
 import bg.tu_varna.sit.presentation.LoginView;
-import bg.tu_varna.sit.presentation.admin.AdminCouriers;
-import bg.tu_varna.sit.presentation.admin.AdminCustomers;
+import bg.tu_varna.sit.service.CustomerService;
 import bg.tu_varna.sit.service.OrderService;
 import bg.tu_varna.sit.service.StatusService;
 
@@ -22,43 +21,48 @@ import java.util.List;
 
 import static bg.tu_varna.sit.data.models.enums.status.StatusType.*;
 
-public class CourierDeliveries extends JFrame implements View {
+public class CourierDeliveriesByCustomer extends JFrame implements View {
     private JPanel panel;
+    private JScrollPane scrollPane;
     private JTable tableOrders;
     private JButton buttonOrdersPendingCourier;
     private JButton buttonOrdersByCustomer;
     private JButton buttonGraphic;
     private JButton buttonLogout;
-    private JComboBox comboBox1;
     private JLabel label1;
     private JLabel label2;
+    private JComboBox comboBox1;
     private JTextField textFieldInfo;
     private JButton buttonUpdateOrder;
     private JButton buttonClear;
-    private JScrollPane scrollPane;
+    private JLabel label3;
+    private JComboBox comboBox2;
 
     private final OrderService orderService = OrderService.getInstance();
     private final StatusService statusService = StatusService.getInstance();
+
+    private final CustomerService customerService = CustomerService.getInstance();
 
     private Integer idOfSelectedOrderForUpdate;
 
     private Courier courier;
 
-    public CourierDeliveries(Courier courier){
+    public CourierDeliveriesByCustomer(Courier courier){
         this.courier=courier;
     }
 
     @Override
     public void open() {
         setContentPane(panel);
-        buttonOrdersPendingCourier.setEnabled(false);
+        buttonOrdersByCustomer.setEnabled(false);
         textFieldInfo.setPreferredSize(new Dimension(40,40));
+        comboBox2.setPreferredSize(new Dimension(40,40));
         comboBox1.setPreferredSize(new Dimension(40,40));
         buttonOrdersPendingCourier.setPreferredSize(new Dimension(40, 40));
         buttonOrdersByCustomer.setPreferredSize(new Dimension(40,40));
         buttonGraphic.setPreferredSize(new Dimension(40,40));
         buttonLogout.setPreferredSize(new Dimension(40,40));
-        setTitle("Куриер[Списък с поръчки със статус \"Чака куриер\"");
+        setTitle("Куриер[Списък с поръчки по конкретен клиент");
         setBounds(270, 100, 1000, 600);
         setVisible(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -67,7 +71,6 @@ public class CourierDeliveries extends JFrame implements View {
         scrollPane.setPreferredSize(new Dimension(600, 300));
 
         tableOrders.setBackground(Color.LIGHT_GRAY);
-        refreshTableData();
 
         buttonUpdateOrder.setPreferredSize(new Dimension(50,50));
         buttonUpdateOrder.addActionListener(action -> updateOrder());
@@ -75,8 +78,19 @@ public class CourierDeliveries extends JFrame implements View {
         buttonClear.setPreferredSize(new Dimension(50, 50));
         buttonClear.addActionListener(action -> clear());
 
-        buttonOrdersByCustomer.addMouseListener(new Navigator(this, new CourierDeliveriesByCustomer(courier)));
+        buttonOrdersPendingCourier.addMouseListener(new Navigator(this, new CourierDeliveries(courier)));
         //!buttonGraphic.addMouseListener(new Navigator(this,new AdminCustomers()));
+
+        List<Customer> customerList = customerService.getAllCustomersWithOrdersByCourier(courier);
+        for (Customer customer : customerList) {comboBox2.addItem(customer.getId()+"/"+customer.getName()+"/"+customer.getDeliveryAddress());}
+
+        comboBox2.setSelectedItem(null);
+
+        comboBox2.addActionListener(action -> {
+            if (comboBox2.getSelectedItem() != null) {
+                refreshTableData();
+            }
+        });
 
         comboBox1.addItem("Чака куриер");
         comboBox1.addItem("В процес на доставка");
@@ -191,8 +205,8 @@ public class CourierDeliveries extends JFrame implements View {
         return null;
     }
 
-    private  Object[][] getAllPendingOrdersOfCourier() {
-        List<Order> orders = orderService.getAllPendingOrdersOfCourier(courier.getId());
+    private  Object[][] getAllOrdersOfCustomer(Integer customerId) {
+        List<Order> orders = orderService.getOrdersOfCustomer(customerId);
 
         Object[][] data = new Object[orders.size()][7];
         for (int i = 0; i < orders.size(); i++) {
@@ -213,14 +227,25 @@ public class CourierDeliveries extends JFrame implements View {
         textFieldInfo.setText("");
         this.idOfSelectedOrderForUpdate=null;
 
-        String[] columnNames = {"Номер", "Клиент", "Куриер", "Статус", "Адрес", "Информация"};
-        Object[][] data = getAllPendingOrdersOfCourier();
-        DefaultTableModel model = new DefaultTableModel(data, columnNames) {
-            @Override
-            public boolean isCellEditable(int row, int column) {
-                return column != 0 && column != 1 && column != 2 && column != 3 && column != 4 && column != 5;
-            }
-        };
-        tableOrders.setModel(model);
+        if(comboBox2.getSelectedItem()!=null)
+        {
+            String selectedValue = (String) comboBox2.getSelectedItem();
+            String [] parts = selectedValue.split("/");
+            Integer customerId = Integer.parseInt(parts[0]);
+
+            String[] columnNames = {"Номер", "Клиент", "Куриер", "Статус", "Адрес", "Информация"};
+            Object[][] data = getAllOrdersOfCustomer(customerId);
+            DefaultTableModel model = new DefaultTableModel(data, columnNames) {
+                @Override
+                public boolean isCellEditable(int row, int column) {
+                    return column != 0 && column != 1 && column != 2 && column != 3 && column != 4 && column != 5;
+                }
+            };
+            tableOrders.setModel(model);
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(panel, "Моля изберете клиент", "Грешка", JOptionPane.ERROR_MESSAGE);
+        }
     }
 }

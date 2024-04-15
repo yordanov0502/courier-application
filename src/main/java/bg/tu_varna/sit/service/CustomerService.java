@@ -1,5 +1,6 @@
 package bg.tu_varna.sit.service;
 
+import bg.tu_varna.sit.data.models.entities.Courier;
 import bg.tu_varna.sit.data.models.entities.Customer;
 import bg.tu_varna.sit.repository.implementations.CustomerRepositoryImpl;
 import org.apache.log4j.Logger;
@@ -32,4 +33,7 @@ public class CustomerService {
     public List<Customer> getAllCustomers(){return customerRepository.getAllCustomers();}
 
     public Customer getCustomerById(Integer customerId) {return customerRepository.getCustomerById(customerId);}
+
+    public List<Customer> getAllCustomersWithOrdersByCourier(Courier courier){return customerRepository.getAllCustomersWithOrdersByCourier(courier);}
+
 }

@@ -10,4 +10,5 @@ public interface CustomerRepository<T> extends Repository<T> {
     List<Customer> getAllCustomers();
     boolean deleteById(Integer customerId);
     Customer getCustomerById(Integer customerId);
+    List<Customer> getAllCustomersWithOrdersByCourier(Courier courier);
 }
