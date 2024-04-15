@@ -64,7 +64,7 @@ public class CustomerQueries extends JFrame implements View {
         buttonAfterDate.addActionListener(action -> performSearchForOrdersOfCustomerAfterDate(textFieldDate.getText()));
 
         buttonOrders.addMouseListener(new Navigator(this, new CustomerOrders(customer)));
-        //buttonGraphic.addMouseListener(new Navigator(this, new CustomerGraphic(customer)));
+        buttonGraphic.addMouseListener(new Navigator(this, new CustomerGraphic(customer)));
 
         buttonLogout.addMouseListener(new Navigator(this, new LoginView(Role.CUSTOMER)));
 

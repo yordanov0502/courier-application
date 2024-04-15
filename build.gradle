@@ -20,6 +20,14 @@ dependencies {
     implementation 'org.hibernate:hibernate-core:5.4.11.Final'
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation 'org.apache.commons:commons-lang3:3.12.0'
+    // https://mvnrepository.com/artifact/org.jfree/jfreechart
+    implementation 'org.jfree:jfreechart:1.5.3'
+    // https://mvnrepository.com/artifact/org.jfree/jcommon
+    implementation 'org.jfree:jcommon:1.0.24'
+    // https://mvnrepository.com/artifact/com.intellij/forms_rt
+    implementation 'com.intellij:forms_rt:7.0.3'
+
+
 
 
     testImplementation platform('org.junit:junit-bom:5.9.1')

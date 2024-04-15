@@ -14,4 +14,5 @@ public interface OrderRepository<T> extends Repository<T> {
     List<Order> getAllPendingOrdersOfCourier(Integer courierId);
 
     List<Order> getOrdersOfCustomerAfterDate(Integer customerId, Date date);
+    int[] getMonthlyOrdersOfCustomer(Integer customerId);
 }

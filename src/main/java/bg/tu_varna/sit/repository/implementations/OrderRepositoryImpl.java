@@ -10,6 +10,7 @@ import org.hibernate.Transaction;
 
 import javax.persistence.TemporalType;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -268,5 +269,39 @@ public class OrderRepositoryImpl implements OrderRepository<Order> {
         return orders;
     }
 
+    @Override
+    public int[] getMonthlyOrdersOfCustomer(Integer customerId) {
+
+        Date date = new Date();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        int currentYear = calendar.get(Calendar.YEAR);
+
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        int[] monthlyOrders = new int[12]; // Array to store the count of orders for each month
+        try {
+            String jpql = "SELECT MONTH(o.createdAt), COUNT(o) FROM Order o " +
+                    "WHERE o.customer.id = :customerId AND YEAR(o.createdAt) = :currentYear " +
+                    "GROUP BY MONTH(o.createdAt) ORDER BY MONTH(o.createdAt)";
+            List<Object[]> results = session.createQuery(jpql, Object[].class)
+                    .setParameter("customerId", customerId)
+                    .setParameter("currentYear", currentYear)
+                    .getResultList();
+            for (Object[] result : results) {
+                int month = (Integer) result[0];
+                long count = (Long) result[1];
+                monthlyOrders[month - 1] = (int) count;
+            }
+            transaction.commit();
+            log.info("Got monthly order counts for customer with ID=" + customerId + " successfully.");
+        } catch (Exception e) {
+            log.error("Error getting monthly order counts for customer with ID=" + customerId + ": " + e.getMessage());
+            transaction.rollback();
+        } finally {
+            session.close();
+        }
+        return monthlyOrders;
+    }
 
 }

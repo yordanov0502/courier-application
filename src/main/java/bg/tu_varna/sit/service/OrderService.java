@@ -36,4 +36,6 @@ public class OrderService {
     public List<Order> getAllPendingOrdersOfCourier(Integer courierId){return orderRepository.getAllPendingOrdersOfCourier(courierId);}
 
     public List<Order> getOrdersOfCustomerAfterDate(Integer customerId, Date date){return orderRepository.getOrdersOfCustomerAfterDate(customerId,date);}
+
+    public int[] getMonthlyOrdersOfCustomer(Integer customerId){return orderRepository.getMonthlyOrdersOfCustomer(customerId);}
 }
