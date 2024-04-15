@@ -32,4 +32,5 @@ public class OrderService {
     public Order getOrderById(Integer orderId) {return orderRepository.getOrderById(orderId);}
 
     public List<Order> getOrdersOfCustomerFromLast5Days(Integer customerId){return orderRepository.getOrdersOfCustomerFromLast5Days(customerId);}
+    public List<Order> getAllPendingOrdersOfCourier(Integer courierId){return orderRepository.getAllPendingOrdersOfCourier(courierId);}
 }

@@ -2,6 +2,7 @@ package bg.tu_varna.sit.presentation;
 
 import bg.tu_varna.sit.common.navigation.Navigator;
 import bg.tu_varna.sit.common.navigation.View;
+import bg.tu_varna.sit.data.models.entities.Courier;
 import bg.tu_varna.sit.data.models.entities.Customer;
 import bg.tu_varna.sit.data.models.entities.UserEntity;
 import bg.tu_varna.sit.data.models.enums.user.Role;
@@ -71,8 +72,9 @@ public class LoginView extends JFrame implements View {
                 }
                 if(getRole().equals(COURIER))
                 {
-                    if (checkCredentials(textField1.getText(), new String(passwordField1.getPassword()),getRole())!=null) {
-                        new Navigator(getThis(), new CourierDeliveries()).mouseClicked(e);
+                    Courier courier = (Courier) checkCredentials(textField1.getText(), new String(passwordField1.getPassword()),getRole());
+                    if (courier != null) {
+                        new Navigator(getThis(), new CourierDeliveries(courier)).mouseClicked(e);
                     }
                     else {errorLabel.setVisible(true);}
                 }

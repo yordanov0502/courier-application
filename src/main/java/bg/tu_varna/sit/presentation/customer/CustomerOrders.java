@@ -100,7 +100,7 @@ public class CustomerOrders extends JFrame implements View {
         }
     }
 
-    private  Object[][] getOrdersOfUser() {
+    private  Object[][] getOrdersOfCustomer() {
         List<Order> orders = orderService.getOrdersOfCustomer(customer.getId());
 
         Object[][] data = new Object[orders.size()][7];
@@ -136,7 +136,7 @@ public class CustomerOrders extends JFrame implements View {
         textFieldInfo.setText("");
 
         String[] columnNames = {"Номер", "Клиент", "Куриер", "Статус", "Адрес", "Информация"};
-        Object[][] data = getOrdersOfUser();
+        Object[][] data = getOrdersOfCustomer();
         DefaultTableModel model = new DefaultTableModel(data, columnNames) {
             @Override
             public boolean isCellEditable(int row, int column) {

@@ -217,4 +217,22 @@ public class OrderRepositoryImpl implements OrderRepository<Order> {
         return orders;
     }
 
+    @Override
+    public List<Order> getAllPendingOrdersOfCourier(Integer courierId) {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<Order> orders = new ArrayList<>();
+        try{
+            String jpql = "SELECT o FROM Order o WHERE courier.id= '" + courierId + "' AND status.statusType= 'PENDING_COURIER'";
+            orders.addAll(session.createQuery(jpql, Order.class).getResultList());
+            transaction.commit();
+            log.info("Got all orders of courier with ID="+courierId+" which are with status 'PENDING_COURIER' successfully.");
+        } catch (Exception e) {
+            log.error("Get all orders of courier with ID="+courierId+" which are with status 'PENDING_COURIER' error: " + e.getMessage());
+        } finally {
+            session.close();
+        }
+        return orders;
+    }
+
 }

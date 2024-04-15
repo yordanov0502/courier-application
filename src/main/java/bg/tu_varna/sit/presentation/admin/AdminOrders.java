@@ -323,6 +323,7 @@ public class AdminOrders extends JFrame implements View {
         comboBox1.setSelectedItem(null);
         comboBox2.setSelectedItem(null);
         comboBox3.setSelectedItem(null);
+        this.idOfSelectedOrderForUpdate=null;
 
         String[] columnNames = {"Номер", "Клиент", "Куриер", "Статус", "Адрес", "Информация"};
         Object[][] data = getAllOrders();
