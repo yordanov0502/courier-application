@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E1C743E-C10F-7D55-7910-657D6EB1612E" name="customers">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:38:29 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_customer" id="D5247131-C9ED-690B-FA90-FE1BD19F122C">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:40:02 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="ADFEB90B-FE4A-2949-F9C6-7DBF11AFC4FC">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:40:02 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="C28D4339-5BCA-C574-5778-D453B8508870">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:40:02 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="A6484BCD-0209-9765-533C-1C44C346B690">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:40:02 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phoneNumber" id="BCD2ADAB-37F1-E338-C529-B56724A40EEF">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:40:02 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deliveryAddress" id="888129E6-520E-3047-A54C-2645C0E6630E">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:40:02 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DAEB757D-2F0D-61F6-AA7F-0E78419C8AAB" name="customers_PK">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:40:02 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5247131-C9ED-690B-FA90-FE1BD19F122C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDCBD1C1-C3DA-2883-49F6-9736B8C6B2C8" name="orders">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:51:30 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_order" id="A2829C5F-8339-FF92-2A92-6B13AD72BB0A">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:52:42 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="782158A6-62AD-4180-BFD9-EB5A0689A000">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:52:42 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_id" id="C9EBAA1E-6C25-4D40-80F7-FB681641C287">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:53:24 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AADB49B-EB7C-AFE3-4651-306E4ED00FF8" referredColumn="D5247131-C9ED-690B-FA90-FE1BD19F122C"/>
+</associations>
+</Column>
+<Column name="courier_id" id="E2D6CBD6-A4A4-95FA-F5CC-4707EDD5DABA">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:53:58 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3BCBC351-27DA-0E38-71DF-E6D00BAA9B3C" referredColumn="5BB73AE9-B64E-812C-8491-5C010B340BED"/>
+</associations>
+</Column>
+<Column name="status_id" id="00837618-2513-06BB-E022-5647012218B4">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:04:19 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="67202E16-67E4-C07E-E1DB-F67175425A03" referredColumn="48282323-F5F8-26E2-F56F-0A0E240F92C4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D121B4E-23D3-9314-81B5-C88F6BD283B7" name="orders_PK">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:52:42 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2829C5F-8339-FF92-2A92-6B13AD72BB0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B050C985-6013-1B20-5ADF-9D4644EAC072" name="orders__UN">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:06:50 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00837618-2513-06BB-E022-5647012218B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1D497DB-ECF3-6F91-C407-B96510FE40AB" name="customer_id">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:53:24 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9EBAA1E-6C25-4D40-80F7-FB681641C287"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A223995-E98E-5598-CC0F-DE664F3309D8" name="courier_id">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:53:58 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2D6CBD6-A4A4-95FA-F5CC-4707EDD5DABA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01ACBAB7-E25C-0720-DCFE-DCA63D76DC27" name="status_id">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:04:19 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00837618-2513-06BB-E022-5647012218B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

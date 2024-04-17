@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E12C3C4F-9CCD-EDAB-5787-75A8A1F52B17" name="admins">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>83DFC65B-FA73-93E0-ED80-F2A34E3AC5B7</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id admin" id="9482380D-9D37-8C49-1A25-11D0EE929213">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>EC90FD51-0C19-CC66-E929-34F1B2635B2C</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="483B16BD-DB46-3118-8D49-51237F8DFC0C">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>516A1888-2D47-1192-9FA9-BD62A30DF03B</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="username" id="20101CEB-692F-2D2C-F2E0-AE27262C33AE">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>FFB08ABE-F169-77B2-C57C-1ACD2497D925</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="136ED968-0C33-DFCC-5353-36064132230D">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>641C5BC5-FA76-3B7F-142B-35D476D4C1D8</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="12C56811-C3D7-0B52-D12A-6E9AB0001924" name="admins PK">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>4A72A614-AE34-F866-FFA6-97882CE53FCB</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9482380D-9D37-8C49-1A25-11D0EE929213</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

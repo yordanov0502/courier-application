@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9542D4C4-0141-F63F-16FD-396C3833E273" name="statuses">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:36:24 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_status" id="48282323-F5F8-26E2-F56F-0A0E240F92C4">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:37:53 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_type" id="91EEC317-461D-5D30-32DB-80F5EFBF4F3C">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:37:53 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="additional_information" id="C4E21035-4C76-8860-0BAA-023FEECFAFA1">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:37:53 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83ABECE7-E29E-800C-0588-6397E7E29EAE" name="statuses_PK">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:37:53 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48282323-F5F8-26E2-F56F-0A0E240F92C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="swing_app_models" id="18E77CB9-0F31-0946-0597-2BD29C19AEA8" version="3.5">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 09:04:37 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>18E77CB9-0F31-0946-0597-2BD29C19AEA8</designId>
+</OSDM_Design>

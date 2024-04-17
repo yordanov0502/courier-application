@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1E3AEF7-A9FE-8C26-17E2-4BC586936BC3" name="couriers">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:40:18 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_courier" id="5BB73AE9-B64E-812C-8491-5C010B340BED">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:41:49 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="5A63813F-E51F-D8BA-55E1-588BEAB4C986">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:41:49 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="05651B4B-E011-1945-C89A-85D30FC4CAB1">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:41:49 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="80F41BCC-4458-6385-0139-EF4FCED686AD">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:41:49 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="9E046621-CC39-6649-91A1-FF964E4416B2">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:41:49 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="years_experience" id="5C2F9404-F209-7111-6A36-2542B2D1ECCF">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:41:49 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="offices_id" id="10698469-D7E9-8B1A-60A9-B0AAEA09ED6F">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:50:08 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="903D64D7-3603-AE8C-2690-FAA1FB3490A0" referredColumn="D058C98B-C8CF-D9E4-FD75-03EB06B4E9F7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BA2655C-B479-1CDF-9D4E-60A3EDA4FB39" name="couriers_PK">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:41:49 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BB73AE9-B64E-812C-8491-5C010B340BED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19E16BDD-567D-CD19-AA96-4AD54A51A228" name="office_id">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:50:08 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10698469-D7E9-8B1A-60A9-B0AAEA09ED6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

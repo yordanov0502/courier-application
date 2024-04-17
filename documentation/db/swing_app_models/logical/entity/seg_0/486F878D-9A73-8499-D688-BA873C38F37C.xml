@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="486F878D-9A73-8499-D688-BA873C38F37C" name="orders">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>FDCBD1C1-C3DA-2883-49F6-9736B8C6B2C8</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id order" id="C572821A-CD4F-61ED-147B-C7DA9F8B8464">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>A2829C5F-8339-FF92-2A92-6B13AD72BB0A</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created at" id="10F855C2-747B-08C5-9F06-68C4E75912E1">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>782158A6-62AD-4180-BFD9-EB5A0689A000</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer id" id="E1E4C5BF-980B-C642-C667-A2C857029CD5">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>06497027-7166-8B08-6BF4-FCD3645DB4E5</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<referedAttribute>B6405DF3-D1F8-0F44-D72F-62135BF79E75</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="courier id" id="97C58086-422E-1871-7977-016087AA7516">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>405B2CD5-FF7E-8E76-F9DD-C87E090FA07F</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<referedAttribute>49B5867D-19B0-C8D1-8D02-A574B41614D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status id" id="469EB569-1BBE-D34D-D543-BD536F14CB45">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>AAEE4754-38B3-FD4A-8CEF-46149FEBB7D4</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<referedAttribute>38E47130-8C28-D3B0-026C-A9ED2BB16866</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DB0DF139-2B74-D425-B339-07D81AFE23D5" name="orders PK">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>9D121B4E-23D3-9314-81B5-C88F6BD283B7</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C572821A-CD4F-61ED-147B-C7DA9F8B8464</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8ACB1927-2341-987E-DBCE-AF5DB40F4EE1" name="orders  UN">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 12:13:49 UTC</createdTime>
+<generatorID>B050C985-6013-1B20-5ADF-9D4644EAC072</generatorID>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<engineerTo>
+<item key="0DB1892F-5272-64F0-2A95-1150248E39E6" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>469EB569-1BBE-D34D-D543-BD536F14CB45</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

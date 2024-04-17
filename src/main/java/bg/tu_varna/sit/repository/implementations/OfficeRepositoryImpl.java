@@ -124,7 +124,6 @@ public class OfficeRepositoryImpl implements OfficeRepository<Office> {
         } finally {
             session.close();
         }
-        System.out.println(offices);
         return offices;
     }
 

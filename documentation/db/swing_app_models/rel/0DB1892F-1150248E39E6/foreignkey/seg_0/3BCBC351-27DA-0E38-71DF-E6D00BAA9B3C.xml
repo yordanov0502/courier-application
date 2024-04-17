@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3BCBC351-27DA-0E38-71DF-E6D00BAA9B3C" containerWithKeyObject="FDCBD1C1-C3DA-2883-49F6-9736B8C6B2C8" localFKIndex="0A223995-E98E-5598-CC0F-DE664F3309D8" name="courier_id">
+<createdBy>yorda</createdBy>
+<createdTime>2024-04-16 11:53:58 UTC</createdTime>
+<ownerDesignName>swing_app_models</ownerDesignName>
+<referredTableLongName>couriers</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C1E3AEF7-A9FE-8C26-17E2-4BC586936BC3</referredTableID>
+<keyObject>4BA2655C-B479-1CDF-9D4E-60A3EDA4FB39</keyObject>
+<referredKeyID>4BA2655C-B479-1CDF-9D4E-60A3EDA4FB39</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_courier</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
